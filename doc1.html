@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Increment & Decrement</title>
+  <style>
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin: 5px;
+    }
+    #counter {
+      font-size: 20px;
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Counter Example</h2>
+  <div id="counter">0</div>
+  <button onclick="decrement()">- Decrease</button>
+  <button onclick="increment()">+ Increase</button>
+
+  <script>
+    let count = 0;
+
+    function updateDisplay() {
+      document.getElementById("counter").textContent = count;
+    }
+
+    function increment() {
+      count++;
+      updateDisplay();
+    }
+
+    function decrement() {
+      count--;
+      updateDisplay();
+    }
+  </script>
+
+</body>
+</html>
